@@ -7,8 +7,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 #从百度搜索页面进入建设银行
 Chromdriver=webdriver.Chrome()
-print(Chromdriver)
-Chromdriver.get("http://baidu.com")
+url="http://baidu.com"
+Chromdriver.get(url)
 kw=Chromdriver.find_element_by_id("kw")
 kw.send_keys("中国建设银行")
 sleep(1)
