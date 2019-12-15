@@ -9,7 +9,8 @@ from selenium.webdriver.common.keys import Keys
 Chromdriver=webdriver.Chrome()
 url="http://baidu.com"
 Chromdriver.get(url)
-kw=Chromdriver.find_element_by_id("kw")
+value="kw"
+kw=Chromdriver.find_element_by_id(value)
 kw.send_keys("中国建设银行")
 sleep(1)
 kw.send_keys(Keys.DOWN)
