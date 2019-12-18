@@ -16,6 +16,7 @@
 # print(delimiter.join(mylist))
 #
 #
+
 # for i in range(1,10):
 #     for j in range(1,i+1):
 #         print("%d*%d=%2d "%(i,j,i*j),end='')
@@ -49,25 +50,36 @@
 # print(a[::-1])
 # #
 # L = [1,2,3,4,5]
+#
+# L = [1,2,3,4,5]
+# # for n in L:
+# print(','.join(str(n)for n in L))
+#
+# # print(','.join(str(n) for n in L))
+#
+#
+# seq3 = ('hello','good','boy','doiido')
+# print(seq3)
+# print (':'.join(seq3),'\n')
+#
+#
+# if __name__ == '__main__':
+#     person = {"li": 18, "wang": 50, "zhang": 20, "sun": 22}
+#     m = 'li'
+#     for key in person.keys():
+#         if person[m] < person[key]:
+#             m = key
+#
+#     print('%s,%d' % (m, person[m]))
 
-L = [1,2,3,4,5]
-# for n in L:
-print(','.join(str(n)for n in L))
+import random
+import string
 
-# print(','.join(str(n) for n in L))
+a = [1,2,3,4,5]
+#1
+print(random.choices(a,k=3))
 
-
-seq3 = ('hello','good','boy','doiido')
-print(seq3)
-print (':'.join(seq3),'\n')
-
-
-if __name__ == '__main__':
-    person = {"li": 18, "wang": 50, "zhang": 20, "sun": 22}
-    m = 'li'
-    for key in person.keys():
-        if person[m] < person[key]:
-            m = key
-
-    print('%s,%d' % (m, person[m]))
-
+print (random.choice(['剪刀', '石头', '布']))
+ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8))
+print (ran_str)
+print (random.sample('zyxwvutsrqponmlkjihgfedcba',5))
